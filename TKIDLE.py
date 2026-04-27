@@ -32,8 +32,8 @@ class TKIDLE:           #TKIDLE类，包含主要程序
         
     def setRoot(self):       #设置界面的高与宽
         if (self.wstr.get() != '') and (self.hstr.get() != ''):
-            self.w = eval(self.wstr.get())
-            self.h = eval(self.hstr.get())
+            self.w = int(self.wstr.get())
+            self.h = int(self.hstr.get())
             self.root.geometry(str(self.w)+'x'+str(self.h))
             
             
@@ -81,11 +81,11 @@ class TKIDLE:           #TKIDLE类，包含主要程序
         
     def outputPy(self):                  #输出.py文件
         #在目录下创建一个project文件夹，再创建或打开一个GUIofProject.py文件
-        path = os.getcwd()               
-        path = path + '\\project'
-        if not os.path.exists(path):
-            os.makedirs(path)
-        self.GUIpy = open(path+'\\'+'GUIofProject.py','w')
+        path = os.getcwd()
+        project_dir = os.path.join(path, 'project')
+        if not os.path.exists(project_dir):
+            os.makedirs(project_dir)
+        self.GUIpy = open(os.path.join(project_dir, 'GUIofProject.py'), 'w')
         GUIpy = self.GUIpy
         
         #写.py文件的开头部分

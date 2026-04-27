@@ -123,7 +123,7 @@ class myComponent:           #各个控件都是myComponent类的子类
         if (self.strText['font'].get() != ''):
             self.property['font'] = self.strText['font'].get()
             self.component.config(font = self.property['font'])
-        if (self.strText['font'].get() != ''):
+        if (self.strText['fg'].get() != ''):
             self.property['fg'] = self.strText['fg'].get()
             self.component.config(fg = self.property['fg'])
         self.tl.destroy()
@@ -373,7 +373,7 @@ class myEntry(myComponent):
             
             GUIpy.write('       self.' + self.property['textvariable'] + ' = StringVar()\n')        
             GUIpy.write('       self.' + self.property['name'] + '.config(textvariable = self.' + self.property['textvariable'] + ')\n')
-            GUIpy.write('       self.' + self.property['textvariable'] + '.set(\'' + self.entryStr.get() + '\')')
+            GUIpy.write('       self.' + self.property['textvariable'] + '.set(\'' + self.entryStr.get() + '\')\n')
 
         #Label类的实现
 class myLabel(myComponent):

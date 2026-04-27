@@ -1,5 +1,7 @@
 # TKIDLE
 
+玩玩deepseek v4 pro, 把以前的辣鸡大作业更新下到py3版本
+
 可视化 Tkinter GUI 界面生成工具 — 通过鼠标拖拽摆放控件，一键输出可运行的 Python 代码。
 
 A visual GUI builder for Python Tkinter — drag and drop widgets, then export a runnable Python file.

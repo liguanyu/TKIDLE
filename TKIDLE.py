@@ -1,7 +1,7 @@
 #coding:utf-8
-from Tkinter import *
+from tkinter import *
 from myComponent import *
-from tkMessageBox import *
+from tkinter.messagebox import *
 import os
 
 class TKIDLE:           #TKIDLE类，包含主要程序
@@ -90,7 +90,7 @@ class TKIDLE:           #TKIDLE类，包含主要程序
         
         #写.py文件的开头部分
         GUIpy.write('#coding:utf-8\n')
-        GUIpy.write('from Tkinter import *\n')
+        GUIpy.write('from tkinter import *\n')
         GUIpy.write('\nclass GUIofProject:\n')
         GUIpy.write('   def __init__(self):\n')
         GUIpy.write('       self.root = Tk()\n')

@@ -1,7 +1,7 @@
 #coding:utf-8
-from Tkinter import *
+from tkinter import *
 from TKIDLE import *
-from tkMessageBox import *
+from tkinter.messagebox import *
 
 class GUIofTKIDLE:              #GUI界面
     def __init__(self):

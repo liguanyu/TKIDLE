@@ -1,5 +1,5 @@
 #coding:utf-8
-from Tkinter import *
+from tkinter import *
 
 class myComponent:           #各个控件都是myComponent类的子类
     def __init__(self,root,num):
